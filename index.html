@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Website</title>
+
+    <!--ICONS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!--SWIPERJS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!--================Navbar=======================-->
+    <nav>
+        <div class="container nav__container">
+            <a href="index.html"><h4>EduCan</h4></a>
+            <ul class="nav__menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button id="open-menu-btn"><i class="fa-solid fa-bars"></i></button>
+            <button id="close-menu-btn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+    </nav>
+    <!--================End of Navbar=======================-->
+
+    <!--==================Header=======================-->
+    <header>
+        <div class="container header__container">
+            <div class="header__left">
+                <h1>Welcome to EduCan</h1>
+                <p>Unlock your potential with our world-class education programs designed for learners of all ages and backgrounds. Whether you’re looking to enhance your skills, pursue a new career, or simply expand your knowledge, we have the right course for you.</p>
+                <a href="courses.html" class="btn btn-primary">Get Started</a>
+            </div>
+            <div class="header__right">
+                <div class="header__right-image">
+                    <img src="./images/header.png">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--================End of Header=======================-->
+
+    <!--==================Categories=======================-->
+    <section class="categories">
+        <div class="container categories__container">
+            <div class="categories__left">
+                <h1>Categories</h1>
+                <p>
+                    Explore our wide range of courses and programs designed to help you achieve your goals. Whether you're seeking foundational knowledge or aiming to acquire advanced skills, each category offers a unique learning experience tailored to meet your specific needs and aspirations.
+                </p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+
+            <div class="categories__right">
+                <article class="category">
+                    <span class="category__icon"><i class="fa-brands fa-bitcoin"></i></span>
+                        <h5>Blockchain</h5>
+                        <p>Learn how decentralized technology is reshaping industries through secure and transparent transactions.</p>
+                </article>
+
+                <article class="category">
+                    <span class="category__icon"><i class="fa-solid fa-paintbrush"></i></span>
+                        <h5>Graphic Design</h5>
+                        <p>Master design principles and tools to create stunning visuals for print and digital media.</p>
+                </article>
+
+                <article class="category">
+                    <span class="category__icon"><i class="fa-solid fa-database"></i></span>
+                        <h5>Database Management System</h5>
+                        <p>Understand data organization, management, and retrieval using various database systems.</p>
+                </article>
+
+                <article class="category">
+                    <span class="category__icon"><i class="fa-brands fa-ubuntu"></i></span>
+                        <h5>Operating System</h5>
+                        <p>Explore how operating systems function, managing hardware and software resources.</p>
+                </article>
+
+                <article class="category">
+                    <span class="category__icon"><i class="fa-solid fa-flask-vial"></i></span>
+                        <h5>Chemistry</h5>
+                        <p>Discover the fundamentals of chemistry, including reactions, compounds, and laboratory techniques.</p>
+                </article>
+
+                <article class="category">
+                    <span class="category__icon"><i class="fa-solid fa-calculator"></i></span>
+                        <h5>Mathematics</h5>
+                        <p>Enhance your problem-solving skills with courses in algebra, calculus, and statistics.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!--==================End of Categories=======================-->
+
+    <!--==================Courses=======================-->
+    <section class="courses">
+        <h2>Our Popular Courses</h2>
+        <div class="container courses__container">
+            <article class="course">
+                <div class="course__image">
+                    <img src="./images/course1.jpg">
+                </div>
+                <div class="course__info">
+                    <h4>How to Remember Inorganic Chemistry Reactions</h4>
+                    <p>Explore the fundamentals of inorganic chemistry, including bonding, reactions, and the properties of inorganic compounds.</p>
+                    <a href="course.html" class="btn btn-primary">Learn More</a>
+                </div>
+            </article>
+
+            <article class="course">
+                <div class="course__image">
+                    <img src="./images/course2.jpg">
+                </div>
+                <div class="course__info">
+                    <h4>Introduction of Operating Systems</h4>
+                    <p>Discover the essential concepts of operating systems, including process management, memory management, and system resource allocation.</p>
+                    <a href="course.html" class="btn btn-primary">Learn More</a>
+                </div> 
+            </article>
+
+            <article class="course">
+                <div class="course__image">
+                    <img src="./images/course3.jpg">
+                </div>
+                <div class="course__info">
+                    <h4>Responsive Admin Dashboard using CSS and HTML</h4>
+                    <p>Build a responsive admin dashboard for real-time data visualization and management, enhancing user experience and efficiency.</p>
+                    <a href="course.html" class="btn btn-primary">Learn More</a>
+                </div>
+            </article>
+        </div>
+    </section>
+    <!--==================End of Courses=======================-->
+
+    <!--==================FAQS=======================-->
+    <section class="faqs">
+        <h2>Frequently Asked Questions</h2>
+        <div class="container faqs__container">
+            <article class="faq">
+                <div class="faq__icon"><i class="fa-solid fa-plus"></i></div>
+                <div class="question__answer">
+                    <h4>How do I know the right courses for me?</h4>
+                    <p>To find the right courses for you, assess your interests, career goals, and existing skills. Explore course descriptions, seek guidance from advisors, and consider reviews from previous students to inform your choices.</p>
+                </div>
+            </article>
+    
+            <article class="faq">
+                <div class="faq__icon"><i class="fa-solid fa-plus"></i></div>
+                <div class="question__answer">
+                    <h4>What prerequisites are needed for specific courses?</h4>
+                    <p>Course prerequisites vary. Check course descriptions for specific requirements, which may include prior knowledge, experience, or other courses. Always verify before enrolling to ensure readiness.</p>
+                </div>
+            </article>
+    
+            <article class="faq">
+                <div class="faq__icon"><i class="fa-solid fa-plus"></i></div>
+                <div class="question__answer">
+                    <h4>How can I manage my study time effectively?</h4>
+                    <p>Effective study time management involves creating a schedule, setting specific goals, prioritizing tasks, and using techniques like the Pomodoro method to maintain focus and productivity.</p>
+                </div>
+            </article>
+    
+            <article class="faq">
+                <div class="faq__icon"><i class="fa-solid fa-plus"></i></div>
+                <div class="question__answer">
+                    <h4>Are online courses as effective as in-person classes?</h4>
+                    <p>Online courses can be as effective as in-person classes, depending on your learning style. They offer flexibility, convenience, and access to diverse resources and materials tailored for virtual learning.</p>
+                </div>
+            </article>
+    
+            <article class="faq">
+                <div class="faq__icon"><i class="fa-solid fa-plus"></i></div>
+                <div class="question__answer">
+                    <h4>What if I want to change my course after enrolling?</h4>
+                    <p>If you wish to change your course, check the institution's policies on course changes or transfers. Speak with an academic advisor for guidance on your options and requirements.</p>
+                </div>
+            </article>
+    
+            <article class="faq">
+                <div class="faq__icon"><i class="fa-solid fa-plus"></i></div>
+                <div class="question__answer">
+                    <h4>How do I find reviews for a course?</h4>
+                    <p>You can find course reviews on the institution's website, social media, or educational forums. Student testimonials and alumni feedback can provide insights into the course quality.</p>
+                </div>
+            </article>
+    
+            <article class="faq">
+                <div class="faq__icon"><i class="fa-solid fa-plus"></i></div>
+                <div class="question__answer">
+                    <h4>What kind of support is available for online students?</h4>
+                    <p>Online students often have access to resources such as academic advisors, technical support, discussion forums, and tutoring services to assist with coursework and enhance the learning experience.</p>
+                </div>
+            </article>
+    
+            <article class="faq">
+                <div class="faq__icon"><i class="fa-solid fa-plus"></i></div>
+                <div class="question__answer">
+                    <h4>Can I get financial aid for online courses?</h4>
+                    <p>Yes, many institutions offer financial aid for online courses. Check the financial aid section of the school's website and apply for scholarships or grants based on eligibility.</p>
+                </div>
+            </article>
+    
+            <article class="faq">
+                <div class="faq__icon"><i class="fa-solid fa-plus"></i></div>
+                <div class="question__answer">
+                    <h4>What are the benefits of taking courses online?</h4>
+                    <p>Online courses offer flexibility, allowing you to learn at your own pace, access diverse materials, and engage with a global community of learners, enhancing your educational experience.</p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="fa-solid fa-plus"></i></div>
+                <div class="question__answer">
+                    <h4>How do I stay motivated while studying online?</h4>
+                    <p>Staying motivated in online studies can be achieved by setting clear goals, maintaining a routine, creating a dedicated study space, and connecting with fellow students for support and accountability.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+    
+    <!--==================End of FAQS=======================-->
+
+    <!--==================Testimonials=======================-->
+
+    <section class="container testimonials__container mySwiper">
+        <h2>Students' Testimonials</h2>
+        <div class="swiper-wrapper">
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./images/avatar1.jpg">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Diya Oswal</h5>
+                    <small>Student</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>The courses helped me gain practical skills in web development. The instructors were highly knowledgeable, and the lessons were easy to follow. I now feel confident building projects independently!</p>
+                </div>
+            </article>
+            
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./images/avatar2.jpg">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Rohan Sharma</h5>
+                    <small>Web Developer</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>I found the platform extremely useful for learning data science. The course structure is fantastic, and the support team was very responsive to my queries throughout the learning process.</p>
+                </div>
+            </article>
+            
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./images/avatar3.jpg">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Sneh Patel</h5>
+                    <small>Student</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>This platform made learning machine learning concepts enjoyable and simple. The projects and real-world examples enhanced my understanding and prepared me for interviews. I highly recommend these courses to everyone!</p>
+                </div>
+            </article>
+            
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./images/avatar4.jpg">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Zoha Attar</h5>
+                    <small>Student</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>The course on AI was exceptional! The instructors explained complex topics clearly, and the projects helped me apply the knowledge. It boosted my confidence to tackle real-world problems.</p>
+                </div>
+            </article>
+            
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./images/avatar5.jpg">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Anjali Deshmukh</h5>
+                    <small>Student</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>Enrolling in the web design course was the best decision! The curriculum is up-to-date, and the practical exercises were challenging but fun. I now create professional websites with ease.</p>
+                </div>
+            </article>
+        </div>
+        <div class="swiper-pagination"></div>
+    </section>
+
+    <!--==================End of Testimonials=======================-->
+
+    <!--==================Footer=======================-->
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__1">
+                <a href="index.html" class="footer__logo"><h4>EduCan</h4></a>
+                <p>
+                    EduCan empowers learners with innovative courses for skill development success.
+                </p>
+            </div>
+        
+            <div class="footer__2">
+                <h4>Permalinks</h4>
+                <ul class="permalinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__3">
+                <h4>Privacy</h4>
+                <ul class="permalinks">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__4">
+                <h4>Contact Us</h4>
+                <div>
+                    <p>+91 XXX XXX XXXX</p>
+                    <p>educan@gmail.com</p>
+                </div>
+
+                <ul class="footer__socials">
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+           
+        </div>
+        <div class="footer__copyright">
+            <small>Copyright &copy; EduCan</small>
+        </div>
+    </footer>
+    <!--==================End of Footer=======================-->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="./main.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      //when window width is >=600px
+      breakpoints:{
+        600:{
+            slidesPerView:2
+        }
+      }
+    });
+    </script>
+</body>
+</html>
+
