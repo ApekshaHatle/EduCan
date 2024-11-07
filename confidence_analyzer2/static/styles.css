@@ -1,0 +1,407 @@
+* {
+    margin: 0;
+    padding: 0;
+    border:0;
+    outline:0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-primary: #6ca1f7; /* Bright Blue - for buttons, links, interactive elements */
+    --color-success: #3dd4a2; /* Bright Green - for success messages or actions */
+    --color-warning: #fdd38c; /* Warm Yellow - for warnings or caution */
+    --color-danger: #f17070; /* Vibrant Red - for errors or critical alerts */
+    --color-danger-variant: rgba(239, 68, 68, 0.4); /* Softer red variant for backgrounds */
+    --color-white: #1f2937; /* Dark Charcoal - main text color for readability */
+    --color-light: rgba(31, 41, 55, 0.6); /* Subtle dark gray for secondary text */
+    --color-black: #ffffff; /* Bright white for text in darker sections */
+    --color-bg: #e9effc; /* Light Gray - for main background */
+    --color-bg1: #c7ecfe; /* Pure White - for sections or cards */
+    --color-bg2: #ffd8b8; /* Vibrant Orange - for highlighted sections or call-to-action */
+
+    --container-width-lg: 80%;
+    --container-width-md: 90%;
+    --container-width-sm: 94%;
+
+    --transition: all 400ms ease;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+    line-height:1.7;
+    color:var(--color-white);
+    background:var(--color-bg);
+}
+
+.container{
+    width:var(--container-width-lg);
+    margin: 0 auto;
+}
+
+section{
+    padding: 6rem 0;
+}
+
+section h2{
+    text-align: center;
+    margin-bottom:4rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5{
+    line-height: 1.2;
+}
+
+h1{
+    font-size: 2.4rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.6rem;
+}
+
+h4{
+    font-size: 1.3rem;
+}
+
+a{
+    color: var(--color-white);
+}
+
+img{
+    width:100%;
+    display:block;
+    object-fit:cover;
+}
+
+.btn{
+    display:inline-block;
+    background: var(--color-white);
+    color:var(--color-black);
+    padding: 1rem 2rem;
+    border:1px solid transparent;
+    font-weight:500;
+    transition: var(--transition);
+}
+
+.btn:hover{
+    background: transparent;
+    color: var(--color-white);
+    border-color: var(--color-white);
+}
+
+.btn-primary{
+    background: var(--color-danger);
+    color: var(--color-white);
+}
+
+button {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+
+
+
+/*==========NAVBAR*===========*/
+
+nav{
+    background: transparent;
+    width:100vw;
+    height:5rem;
+    position: fixed;
+    top:0;
+    z-index: 11;
+}
+
+/*change navbar styles on scroll using javascript*/
+.window-scroll{
+    background: var(--color-primary);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
+}
+
+.nav__container{
+    height:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav button{
+    display: none;
+}
+
+.nav__menu{
+    display: flex;
+    align-items: center;
+    gap:4rem;
+}
+
+.nav__menu a{
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+.nav__menu a:hover{
+    color: var(--color-bg2);
+}
+
+/*===========HEADER===============*/
+header {
+    position: relative;
+    top: 5rem;
+    overflow: hidden;
+    height: 70vh;
+    margin-bottom: 15rem;
+}
+
+.header__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;  /*split in half*/
+    align-items: center;
+    gap: 5rem;
+    height: 100%;
+}
+
+.header__left p {
+    margin: 1rem 0 2.4rem;
+}
+
+/*============confidence analyser==============*/
+
+.confidence h1 {
+    color: rgb(77, 11, 11);
+}
+.confidence {
+    background: #fcefe0;
+    text-align: center;
+}
+
+.confidence__container {
+    display: grid;
+    grid-template-columns: 25% 10% 65%; /* 40% for .record, 60% for .chart */
+    gap: 4rem; /* Space between record and chart */
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto; /* Center the container */
+}
+
+
+.record p{
+    margin: 1rem 0 3rem;
+}
+
+.analyze {
+    margin-top: 13rem;
+    color: #ffffff;
+}
+
+.btn-analyze {
+    color: white; /* Set text color to white */
+}
+
+.btn-retry{
+    margin-top: 3rem;
+    background: var(--color-success);
+    color: white;
+    width: 15rem;
+}
+
+.chart {
+    display: flex; /* Flexbox to center the chart */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    width: 100%; /* Make sure chart takes full width */
+    height: 400px;
+    padding: 10px;
+    margin-top: 4rem;
+    background-color: #fcfaf7; /* Optional background color for the chart container */
+}
+
+
+
+.record {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem; /* Reduced padding */
+}
+
+.playback{
+    margin-top: 2rem;
+}
+
+.mic-toggle {
+    margin-top: 3rem;
+    position: relative;
+    display: block;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    background-color: crimson;
+    margin-bottom: 2rem; /* Reduced margin */
+}
+
+.mic-toggle:after,
+.mic-toggle:before {
+    --pad: 0rem;
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 0;
+    background-color: rgba(255, 108, 55, 0.2);
+    top: var(--pad);
+    left: var(--pad);
+    right: var(--pad);
+    bottom: var(--pad);
+    border-radius: 50%;
+}
+
+.mic-toggle:after {
+    transition: 0.4s;
+}
+
+.mic-toggle:before {
+    transition: 0.2s;
+}
+
+.mic-toggle:hover:before {
+    --pad: -1rem;
+}
+
+.mic-toggle:hover:after {
+    --pad: -2rem;
+}
+
+.mic-toggle span {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    font-size: 4rem;
+}
+
+.mic-toggle.is-recording:after {
+    animation: smoothPadAfter 0.6s ease-in alternate-reverse forwards infinite;
+}
+
+.mic-toggle.is-recording:before {
+    animation: smoothPadBefore 0.6s ease-in alternate-reverse forwards infinite;
+}
+
+@keyframes smoothPadAfter {
+    0% {
+        top: -2rem;
+        left: -2rem;
+        right: -2rem;
+        bottom: -2rem;
+    }
+    100% {
+        top: -1rem;
+        left: -1rem;
+        right: -1rem;
+        bottom: -1rem;
+    }
+}
+
+@keyframes smoothPadBefore {
+    0% {
+        top: -1rem;
+        left: -1rem;
+        right: -1rem;
+        bottom: -1rem;
+    }
+    100% {
+        top: -0.5rem;
+        left: -0.5rem;
+        right: -0.5rem;
+        bottom: -0.5rem;
+    }
+}
+
+.playback {
+    margin-bottom: 1rem;
+    box-shadow: 0px 0px 1rem rgba(0, 0, 0, 0.2);
+    border-radius: 999px;
+}
+
+.is-hidden {
+    display: none;
+}
+
+.chart {
+    display: flex; /* Flexbox for centering the canvas */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 400px; /* Set a fixed height for the chart */
+	width: 100%; /* Make sure container has full width */
+    padding: 10px; /* Space inside the chart container */
+	background-color: #fcfaf7; /* Optional: Background color */
+}
+
+.chart canvas {
+    width: 100% !important; /* Ensure canvas takes full width */
+    height: 100% !important; /* Ensure canvas takes full height */
+}
+
+.chart .chart_types {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.chart .chart_types button {
+    padding: 10px 25px;
+}
+
+/*============FOOTER=====================*/
+footer{
+    background: var(--color-bg1);
+    padding-top: 5rem;
+    font-size: 0.9rem;
+}
+
+.footer__container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 5rem;
+}
+
+.footer__container > div h4{
+    margin-bottom: 1.2rem;
+}
+
+.footer__1 p{
+    margin: 0 0 2rem;
+}
+
+footer ul li{
+    margin-bottom: 0.7rem;
+} 
+
+footer ul li a:hover{
+    text-decoration: underline;
+}
+
+.footer__socials{
+    display: flex;
+    gap:1rem;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+
+.footer__copyright{
+    text-align: center;
+    margin-top: 4rem;
+    padding: 1.2rem 0;
+    border-top: 1px solid var(--color-bg2);
+}

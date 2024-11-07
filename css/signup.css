@@ -1,0 +1,108 @@
+/*=============SIGNUP PAGE STYLE==================*/
+
+/* Container */
+.signup__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Center items vertically */
+    height: 100vh;
+    background-color: #f4f4f4; /* Light background */
+    padding: 0 5%;
+}
+
+/* Left: Signup Form */
+.signup__left {
+    flex: 1; /* Allows this section to grow */
+    max-width: 500px; /* Optional, adjust if needed */
+    display: flex; /* Use flex to center the form */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center vertically */
+}
+
+.signup__left h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--color-primary);
+}
+
+.signup__form {
+    background: var(--color-bg1);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+.signup__form .form__group {
+    margin-bottom: 1rem;
+}
+
+.signup__form label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.signup__form input[type="text"],
+.signup__form input[type="email"],
+.signup__form input[type="password"] {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--color-bg3);
+    background: var(--color-bg);
+}
+
+/* Use the button style from your global CSS */
+.signup__form button {
+    width: 100%;
+    padding: 1rem;
+    background: var(--color-danger); /* Matches the btn-primary */
+    color: var(--color-white);
+    border: 1px solid transparent;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.signup__form button:hover {
+    background: transparent;
+    color: var(--color-danger);
+    border-color: var(--color-danger);
+}
+
+.signup__form p {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.signup__form a {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup__form a:hover {
+    text-decoration: underline;
+}
+
+/* Right: Image */
+.signup__right {
+    flex: 1; /* Allow the right section to grow */
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+}
+
+.signup__right-image {
+    width: 100%; /* Full width of the right section */
+}
+
+.btn.btn-primary {
+    color: #f4f4f4; /* Set text color to the desired shade (light gray) */
+}
+.btn.btn-primary:hover {
+    color: #231a1a; /* Set text color to the desired shade (light gray) */
+}
+.signup__right-image img {
+    width: 100%; /* Allow image to fill the container */
+    height: auto; /* Maintain aspect ratio */
+    min-height: 100%; /* Ensures the image height fills the container */
+}

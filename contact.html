@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCan</title>
+
+    <!--ICONS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/contact.css">
+</head>
+<body>
+    <!--================Navbar=======================-->
+    <nav>
+        <div class="container nav__container">
+            <a href="index.html"><h4>EduCan</h4></a>
+            <ul class="nav__menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="http://127.0.0.1:8080/">Confidence</a></li>
+            </ul>
+            <button id="open-menu-btn"><i class="fa-solid fa-bars"></i></button>
+            <button id="close-menu-btn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+    </nav>
+    <!--================End of Navbar=======================-->
+<!--================Contacts=======================-->
+<section class="contact">
+    <div class="container contact__container">
+        <aside class="contact__aside">
+            <div class="aside__image">
+                <img src="./images/contact.svg">
+            </div>
+            <h2>Contact Us</h2>
+            <p>
+                We are happy to help you always!
+                Please fill in the following details to contact us
+            </p>
+            <ul class="contact__details">
+                <li>
+                    <i class="fa-solid fa-phone"></i>
+                    <h5>+91 XXX XXX XXXX</h5>
+                </li>
+                <li>
+                    <i class="fa-solid fa-envelope"></i>
+                    <h5>educan@gmail.com</h5>
+                </li>
+                <li>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h5>Area 51, Nevada</h5>
+                </li>
+            </ul>
+            <ul class="contact__socials">
+                <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://x.com/"><i class="fa-brands fa-x-twitter"></i></a></li>
+                <li><a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+        </aside>
+
+        <form action="https://formspree.io/f/xdkoolwp" method="POST" class="contact__form">
+            <div class="form__name">
+                <input type="text" name="First Name" placeholder="First Name" required>
+                <input type="text" name="Last Name" placeholder="Last Name" required>
+            </div>
+            <input type="email" class="Email Address" placeholder="Your Email Address" required>
+            <textarea name="Message" placeholder="Your Message Here" rows="7" ></textarea>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    </div>
+</section>
+<!--================End of Contacts=======================-->
+
+<!--==================Footer=======================-->
+
+<footer class="footer">
+    <div class="container footer__container">
+        <div class="footer__1">
+            <a href="index.html" class="footer__logo"><h4>EduCan</h4></a>
+            <p>
+                EduCan empowers learners with innovative courses for skill development success.
+            </p>
+        </div>
+    
+        <div class="footer__2">
+            <h4>Permalinks</h4>
+            <ul class="permalinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer__3">
+            <h4>Privacy</h4>
+            <ul class="permalinks">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+                <li><a href="#">Refund Policy</a></li>
+            </ul>
+        </div>
+
+        <div class="footer__4">
+            <h4>Contact Us</h4>
+            <div>
+                <p>+91 XXX XXX XXXX</p>
+                <p>educan@gmail.com</p>
+            </div>
+
+            <ul class="footer__socials">
+                <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://x.com/"><i class="fa-brands fa-x-twitter"></i></a></li>
+                <li><a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+       
+    </div>
+    <div class="footer__copyright">
+        <small>Copyright &copy; EduCan</small>
+    </div>
+</footer>
+<!--==================End of Footer=======================-->
+
+<script src="./main.js"></script>
+</body>
+</html>

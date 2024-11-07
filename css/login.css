@@ -1,0 +1,99 @@
+/*=============LOGIN PAGE STYLE==================*/
+
+/* Container */
+.login__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4; /* Light background */
+    padding: 0 5%;
+}
+
+/* Left: Login Form */
+.login__left {
+    flex: 1;
+    max-width: 500px;
+}
+
+.login__left h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--color-primary);
+}
+
+.login__form {
+    background: var(--color-bg1);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 2rem 2rem rgba(0,0,0,0.1);
+}
+
+.btn.btn-primary {
+    color: #f4f4f4; /* Set text color to the desired shade (light gray) */
+}
+.btn.btn-primary:hover {
+    color: #231a1a; /* Set text color to the desired shade (light gray) */
+}
+.login__form input[type="email"],
+.login__form input[type="password"] {
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    border: 1px solid var(--color-bg3);
+    background: var(--color-bg);
+}
+
+/* Use the button style from your global CSS */
+.login__form button {
+    width: 100%;
+    padding: 1rem;
+    background: var(--color-danger); /* Matches the btn-primary */
+    color: var(--color-white);
+    border: 1px solid transparent;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.login__form button:hover {
+    background: transparent;
+    color: var(--color-danger);
+    border-color: var(--color-danger);
+}
+
+.login__form p {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.login__form a {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login__form a:hover {
+    text-decoration: underline;
+}
+
+/* Right: Image */
+.login__right {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center; /* Centers the image vertically */
+    /* Optional: Set a fixed width if desired */
+    min-width: 400px; /* Adjust based on your layout */
+}
+
+.login__right-image {
+    width: 100%; /* Make sure the image container takes full width */
+    max-width: 500px; /* Control maximum width to prevent overflow */
+}
+
+.login__right-image img {
+    width: 100%; /* Allow image to fill the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 1rem;
+}

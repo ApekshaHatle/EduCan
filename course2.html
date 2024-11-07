@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCan | Course Details</title>
+
+    <!--ICONS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!--================Navbar=======================-->
+    <nav>
+        <div class="container nav__container">
+            <a href="index.html"><h4>EduCan</h4></a>
+            <ul class="nav__menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="http://127.0.0.1:8080/">Confidence</a></li>
+            </ul>
+            <button id="open-menu-btn"><i class="fa-solid fa-bars"></i></button>
+            <button id="close-menu-btn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+    </nav>
+    <!--================End of Navbar=======================-->
+
+    <!--==================Course Details=======================-->
+    <section class="course-details">
+        <div class="container course-details__container">
+            <div class="course-details__image">
+                <img src="./images/course2.jpg" alt="Course Image">
+            </div>
+            <div class="course-details__info">
+                <h2>Mastering Data Science Fundamentals</h2>
+                <p>
+                    This course provides a comprehensive introduction to data science, covering data cleaning, visualization, statistical analysis, and machine learning. Ideal for beginners looking to build a strong foundation.
+                </p>
+                <p><strong>Instructor:</strong> Prof. John Smith</p>
+                <p><strong>Duration:</strong> 8 Weeks</p>
+                <p><strong>Level:</strong> Beginner</p>
+                <p><strong>Price:</strong> $120.00</p>
+                <button class="btn btn-primary">Enroll Now</button>
+            </div>
+        </div>
+
+        <div class="container course-details__content">
+            <h3>What You'll Learn</h3>
+            <ul>
+                <li>Basic data cleaning and manipulation techniques</li>
+                <li>Fundamentals of data visualization and exploration</li>
+                <li>Introduction to statistical analysis</li>
+                <li>Basics of machine learning</li>
+            </ul>
+
+            <h3>Course Syllabus</h3>
+            <ol>
+                <li>Introduction to Data Science</li>
+                <li>Data Cleaning and Manipulation</li>
+                <li>Data Visualization Techniques</li>
+                <li>Statistical Analysis Basics</li>
+                <li>Introduction to Machine Learning</li>
+            </ol>
+        </div>
+    </section>
+    <!--==================End of Course Details=======================-->
+
+    <!--==================Footer=======================-->
+    <footer class="footer">
+        <div class="container footer__container">
+            <!-- Content similar to course1.html -->
+        </div>
+    </footer>
+    <script src="./main.js"></script>
+</body>
+</html>
